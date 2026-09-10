@@ -1,0 +1,1 @@
+import('./sync.js?v=sync-2').catch(()=>{document.getElementById('syncStatus').textContent='Sincronização indisponível. Confira a conexão e atualize a página; seus dados locais continuam disponíveis.';});

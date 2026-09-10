@@ -22,6 +22,8 @@ jobs:
         with:
           node-version: '24'
       - run: node scripts/verificar.mjs
+      - run: node scripts/verificar-sync.mjs
+      - run: node scripts/verificar-sync-runtime.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
