@@ -1,0 +1,73 @@
+{
+  "id": "af-01-ib6",
+  "category": "analise-fontes",
+  "title": "InterBase 6",
+  "code": "AF-01-IB6",
+  "resources": [
+    {
+      "id": "af-01-ib6-material",
+      "title": "Repositório e fontes",
+      "url": "https://github.com/rdtbra/AF-01-IB6",
+      "kind": "material"
+    },
+    {
+      "id": "af-01-ib6-ia-0",
+      "title": "Perplexity",
+      "url": "https://app.adapta.one/chats/8f391a6f-bb1d-40a9-974e-5e0128b1726c",
+      "kind": "legacy",
+      "detail": "M01 · AdaptaONE"
+    },
+    {
+      "id": "af-01-ib6-ia-1",
+      "title": "Gemini 2.5 Pro",
+      "url": "https://app.adapta.one/chats/8418189c-4f8b-4085-bdc7-5c6dae3d243f",
+      "kind": "legacy",
+      "detail": "M02 · AdaptaONE"
+    },
+    {
+      "id": "af-01-ib6-ia-2",
+      "title": "DeepSeek R1",
+      "url": "https://app.adapta.one/chats/4275da05-1436-4b1a-802b-c9129c20255e",
+      "kind": "legacy",
+      "detail": "M03 · AdaptaONE"
+    },
+    {
+      "id": "af-01-ib6-ia-3",
+      "title": "Claude 4.5 Sonnet",
+      "url": "https://agent.adapta.one/agentic-chat/019a4583-4fa1-705f-b816-b571d2ddbf53",
+      "kind": "legacy",
+      "detail": "M04 · AdaptaONE26"
+    },
+    {
+      "id": "af-01-ib6-ia-4",
+      "title": "GPT-4.1-mini",
+      "url": "https://chatgpt.com/g/g-p-676c4cf9ee6c8191b3e3307b8e4e9346/c/69078edc-e974-832d-8b78-a6d44fd68c33",
+      "kind": "legacy",
+      "detail": "M05 · openAI"
+    },
+    {
+      "id": "af-01-ib6-ia-5",
+      "title": "GPT-5",
+      "url": "https://chatgpt.com/g/g-p-676c4cf9ee6c8191b3e3307b8e4e9346/c/68c76489-02f0-8004-b9b6-40a45b42d0b6",
+      "kind": "legacy",
+      "detail": "SUP · openAI"
+    },
+    {
+      "id": "af-01-ib6-ia-6",
+      "title": "Grok 3",
+      "url": "https://app.innerai.com/projects/b17b1c90-4726-4f48-9f1b-320b55133cf1?sessionId=a1487813-e3e4-4c44-afb0-d5a843dc0b1f",
+      "kind": "legacy",
+      "detail": "REV · Inner.IA"
+    }
+  ],
+  "description": "Estudo do código-fonte do InterBase 6. Reúna perguntas, referências e descobertas antes de voltar ao ambiente de análise.",
+  "source": "RDT-00 / AFgroups.js",
+  "pilot": true,
+  "image": "assets/interbase.png",
+  "environment": {
+    "name": "VM2082-LX64-AF-01-IB6",
+    "host": "RDT-011 · VMware Workstation",
+    "access": "MobaXterm · SSH",
+    "note": "Os atalhos originais foram preservados em referencias/automation/interbase. A ligação entre o hub e o Windows ainda não está instalada."
+  }
+}

@@ -1,0 +1,24 @@
+/* Todas as superfícies seguem o tema, inclusive formulários e diálogos. */
+:root{color-scheme:dark;--canvas:#101820;--surface:#19252f;--input:#121e27;--text:#e3edf3;--ink:#e3edf3;--muted:#a3b7c4;--line:#334551;--accent:#8ed9ba;--hover:#253844;--soft:#233c35;--soft-text:#b4e9ce;--warning:#302a1c;--warning-text:#e4c68a;--sidebar:#0c141b;--side-text:#dce7ed;--side-hover:#263d4b;--side-muted:#9fb6c4;--primary:#196b54;--primary-hover:#205e4c}
+:root[data-theme="light"]{color-scheme:light;--canvas:#f3f6f8;--surface:#fff;--input:#fcfdfe;--text:#20313e;--ink:#142d3b;--muted:#657681;--line:#dce4e9;--accent:#126957;--hover:#edf3f5;--soft:#edf7f1;--soft-text:#236550;--warning:#fff8e8;--warning-text:#6d5728;--sidebar:#e9f0f4;--side-text:#203b4b;--side-hover:#d4e2e9;--side-muted:#526f80;--primary:#126957;--primary-hover:#0c5545}
+html,body{background:var(--canvas);color:var(--text)}
+.topbar,.panel,.pilot-card,.category-card,.activity-row,.empty,dialog,.button,.search-wrap input,.skip{background:var(--surface);color:var(--text);border-color:var(--line)}
+.button:hover{background:var(--hover)}
+.primary{background:var(--primary);color:#fff;border-color:var(--primary)}.primary:hover{background:var(--primary-hover)}
+input,textarea,select{background:var(--input);color:var(--text);border-color:var(--line)}
+input::placeholder,textarea::placeholder{color:var(--muted);opacity:1}
+label{color:var(--text)}
+.badge,.resource-icon{background:var(--soft);color:var(--soft-text);border-color:var(--line)}
+.notice{background:var(--warning);color:var(--warning-text)}
+.path{background:var(--input);color:var(--text)}
+.resource{border-color:var(--line)}.category-card .num{color:var(--muted)}
+aside{background:var(--sidebar);color:var(--side-text)}
+.nav-link.active,.nav-link:hover{background:var(--side-hover);color:var(--side-text)}
+.brand small,.brand b,.nav-heading,.nav-number,.nav-count,.sidebar-footer p{color:var(--side-muted)}
+.sidebar-footer{border-color:var(--line)}.local-label{color:var(--accent)}
+.nav-link.active{box-shadow:inset 3px 0 var(--accent)}
+.topbar-actions{display:flex;gap:18px;align-items:center;margin-left:auto}
+#themeToggle{white-space:nowrap;flex-shrink:0}
+/* Mantém capas e ícones inteiros, adaptando o tamanho sem distorção. */
+.pilot-card img{object-fit:contain;object-position:center;width:100%;height:100%;min-height:0;padding:10px;background:var(--input)}
+@media(max-width:760px){.topbar-actions{gap:8px}.topbar-actions .storage-link{display:none}#themeToggle{padding:9px 12px}}
