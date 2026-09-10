@@ -18,3 +18,17 @@ for(const route of ['#inicio','#favoritos','#dados','#atividade/af-01-ib6','#ati
 sandbox.location.hash='#atividade/af-01-ib6';vm.runInNewContext(read('dist/assets/app.js'),sandbox);node('recordForm').oninput({target:{name:'notes',value:'Registro de teste'}});assert.equal(JSON.parse(persisted).records['af-01-ib6'].notes,'Registro de teste');vm.runInNewContext(read('dist/assets/app.js'),sandbox);assert(node('main').innerHTML.includes('Registro de teste'));
 let registered;vm.runInNewContext(read('dist/assets/agent-tools.js'),{document:{modelContext:{registerTool:t=>{registered=t;}}},window:browser,AbortController});assert.equal(registered.name,'buscar_atividades');assert(registered.execute({consulta:'EMT-01-ES'}).some(a=>a.id==='emt-01-es'));assert.throws(()=>registered.execute({consulta:1}));
 console.log('OK: 191 atividades, 12 categorias, recursos, backups válidos/inválidos, rotas, persistência de notas e contrato de busca para agentes. Teste lógico sem navegador.');
+
+const sample=Array.from({length:10},(_,i)=>({id:'a'+i}));
+const prefs=c.empty();prefs.recent=sample.map(a=>a.id);prefs.pinned=['a7'];
+assert.equal(c.homeActivities(prefs,sample).map(a=>a.id).join(','),'a7,a0,a1,a2');
+prefs.homeLimit=6;assert.equal(c.homeActivities(prefs,sample).length,6);
+prefs.pinned=sample.slice(0,7).map(a=>a.id);prefs.homeLimit=4;assert.equal(c.homeActivities(prefs,sample).length,7);
+assert.equal(c.validate(JSON.parse(JSON.stringify(prefs))).pinned.length,7);
+assert.equal(c.validate({version:1,records:{},favorites:[],custom:{}}).homeLimit,4);
+assert.throws(()=>c.validate({...prefs,homeLimit:5}));
+sandbox.location.hash='#atividade/af-01-ib6';vm.runInNewContext(read('dist/assets/app.js'),sandbox);
+node('pinHome').onclick();assert(JSON.parse(persisted).pinned.includes('af-01-ib6'));
+sandbox.location.hash='#inicio';vm.runInNewContext(read('dist/assets/app.js'),sandbox);
+assert(node('main').innerHTML.includes('FIXADA'));node('homeLimit').onchange({target:{value:'8'}});assert.equal(JSON.parse(persisted).homeLimit,8);
+console.log('OK: fixação, recentes sem duplicação, limites, backup antigo e controles da interface.');
