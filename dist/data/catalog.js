@@ -2427,10 +2427,10 @@ window.HUB_CATALOG = {
       "pilot": false
     },
     {
-      "id": "sdc-01-ppn",
+      "id": "sdc-02-ppn",
       "category": "smart-decision",
-      "title": "Funcef - Conversão de código para SAS Viya",
-      "code": "SDC-01-PPN",
+      "title": "SDC-02-PPN - Funcef - Conversão de código para SAS Viya",
+      "code": "SDC-02-PPN",
       "resources": [
         {
           "id": "sdc-01-ppn-material",
@@ -3017,6 +3017,16 @@ window.HUB_CATALOG = {
           "kind": "material"
         }
       ]
+    },
+    {
+      "id": "sdc-01-alz",
+      "category": "smart-decision",
+      "title": "SDC-01-ALZ - ACDM SAS",
+      "code": "SDC-01-ALZ",
+      "description": "Atividade de estudo e desenvolvimento relacionada ao ACDM SAS.",
+      "source": "RDT-02-HUB / atividade criada pelo usuário",
+      "pilot": false,
+      "resources": []
     }
   ]
 };

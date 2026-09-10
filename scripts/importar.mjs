@@ -19,7 +19,10 @@ Object.assign(ib,{image:'assets/interbase.png',description:'Estudo do código-fo
 const book=activities.find(a=>a.id==='emt-01-es');
 Object.assign(book,{image:'assets/probability.png',title:'Probability for Dummies',subtitle:'Deborah J. Rumsey · 2ª edição',description:'Estudo de probabilidade com acesso ao livro e um registro próprio de leitura, dúvidas e exercícios.',historical:'O Automation registrava a página 25 do PDF. É uma referência antiga, não uma posição atual confirmada.',localFile:'H:\\Meu Drive\\Documentação\\ZLeitura\\Rumsey - Probability for Dummies 2ed.pdf'});
 book.resources[0].title='Ler na O’Reilly';
+const sdcPpn=activities.find(a=>a.id==='sdc-01-ppn');
+if(sdcPpn){sdcPpn.id='sdc-02-ppn';sdcPpn.code='SDC-02-PPN';sdcPpn.title='SDC-02-PPN - Funcef - Conversão de código para SAS Viya';}
 for(const name of fs.readdirSync(path.join(root,'atividades/entretenimento'))){activities.push(JSON.parse(fs.readFileSync(path.join(root,'atividades/entretenimento',name,'cadastro.json'),'utf8')));}
+for(const name of fs.readdirSync(path.join(root,'atividades/sdc'))){activities.push(JSON.parse(fs.readFileSync(path.join(root,'atividades/sdc',name,'cadastro.json'),'utf8')));}
 const output={version:1,categories,activities};
 for(const [activity,folder] of [[ib,'analise-fontes/af-01-ib6'],[book,'estudos/emt-01-es']]){
  const dest=path.join(root,'atividades',folder);fs.mkdirSync(dest,{recursive:true});fs.writeFileSync(path.join(dest,'cadastro.json'),JSON.stringify(activity,null,2)+'\n');
