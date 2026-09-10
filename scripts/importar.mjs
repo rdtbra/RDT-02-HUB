@@ -11,7 +11,6 @@ for(const [category,,file] of definitions){
  for(const group of context.window.GROUPS){
   const resources=[];
   if(/^https?:\/\//i.test(group.iconHref||''))resources.push({id:`${group.id}-material`,title:category==='analise-fontes'?'Repositório e fontes':'Material de referência',url:group.iconHref,kind:'material'});
-  for(const [i,item] of (group.items||[]).entries())if(/^https?:\/\//i.test(item.url||''))resources.push({id:`${group.id}-ia-${i}`,title:item.label,url:item.url,kind:'legacy',detail:[item.code,item.provider].filter(Boolean).join(' · ')});
   activities.push({id:group.id,category,title:group.name.replace(/^[A-Z]+-\d+-[A-Z0-9]+\s*-\s*/,''),code:group.id.toUpperCase(),resources,description:group.description||'',source:`RDT-00 / ${file}`,pilot:['af-01-ib6','emt-01-es'].includes(group.id)});
  }
 }
