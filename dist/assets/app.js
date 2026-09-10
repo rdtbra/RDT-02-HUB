@@ -4,7 +4,7 @@ const catalog=window.HUB_CATALOG,C=window.HubCore,KEY='rdt02-state-v1',main=docu
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let state=C.empty(),storageError=false,current=null;
 try{const saved=localStorage.getItem(KEY);if(saved)state=C.validate(JSON.parse(saved));}catch{storageError=true;}
-const aiServices=[['ChatGPT','https://chatgpt.com/'],['Claude','https://claude.ai/'],['Gemini','https://gemini.google.com/'],['Grok','https://grok.com/'],['Copilot','https://copilot.microsoft.com/'],['Perplexity','https://www.perplexity.ai/']];
+const aiServices=[['ChatGPT','https://chatgpt.com/'],['Claude','https://claude.ai/'],['Gemini','https://gemini.google.com/'],['Grok','https://grok.com/'],['Copilot','https://copilot.microsoft.com/'],['Perplexity','https://www.perplexity.ai/'],['MyHUB.ia','https://myhub.ia.br/'],['Hugging Face','https://huggingface.co/']];
 function aiPanel(){return `<section class="panel ai-panel" aria-labelledby="ai-heading"><div class="eyebrow">Ferramentas para esta atividade</div><h2 id="ai-heading">Inteligência artificial</h2><div class="ai-links">${aiServices.map(([name,url])=>`<a class="ai-link" href="${url}" target="_blank" rel="noopener noreferrer">${name}<span aria-hidden="true">↗</span></a>`).join('')}</div><p class="hint">Abra a IA de sua preferência e escolha o modelo dentro do serviço. Os links abrem em uma nova aba; o contexto desta atividade não é enviado automaticamente.</p></section>`;}
 const category=id=>catalog.categories.find(c=>c.id===id);
 function toast(s){const t=document.getElementById('toast');t.textContent=s;t.style.display='block';clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.style.display='none',4200);}
