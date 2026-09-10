@@ -23,6 +23,9 @@ const sdcPpn=activities.find(a=>a.id==='sdc-01-ppn');
 if(sdcPpn){sdcPpn.id='sdc-02-ppn';sdcPpn.code='SDC-02-PPN';sdcPpn.title='SDC-02-PPN - Funcef - Conversão de código para SAS Viya';}
 for(const name of fs.readdirSync(path.join(root,'atividades/entretenimento'))){activities.push(JSON.parse(fs.readFileSync(path.join(root,'atividades/entretenimento',name,'cadastro.json'),'utf8')));}
 for(const name of fs.readdirSync(path.join(root,'atividades/sdc'))){activities.push(JSON.parse(fs.readFileSync(path.join(root,'atividades/sdc',name,'cadastro.json'),'utf8')));}
+for(const name of fs.readdirSync(path.join(root,'atividades/projetos'))){activities.push(JSON.parse(fs.readFileSync(path.join(root,'atividades/projetos',name,'cadastro.json'),'utf8')));}
+const ownHub=activities.find(a=>a.id==='rdt-02-hub');
+if(ownHub){const index=activities.indexOf(ownHub);activities.splice(index,1);const firstProject=activities.findIndex(a=>a.category==='projetos');activities.splice(firstProject<0?activities.length:firstProject,0,ownHub);}
 const output={version:1,categories,activities};
 for(const [activity,folder] of [[ib,'analise-fontes/af-01-ib6'],[book,'estudos/emt-01-es']]){
  const dest=path.join(root,'atividades',folder);fs.mkdirSync(dest,{recursive:true});fs.writeFileSync(path.join(dest,'cadastro.json'),JSON.stringify(activity,null,2)+'\n');

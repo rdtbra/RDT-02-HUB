@@ -411,6 +411,29 @@ window.HUB_CATALOG = {
       "pilot": false
     },
     {
+      "id": "rdt-02-hub",
+      "category": "projetos",
+      "title": "RDT-02-HUB",
+      "code": "RDT-02-HUB",
+      "description": "Projeto do hub pessoal: organização de atividades, materiais, acessos e retomadas entre Windows, celular e tablet.",
+      "source": "RDT-02-HUB / projeto atual",
+      "pilot": false,
+      "resources": [
+        {
+          "id": "rdt-02-hub-github",
+          "title": "Repositório no GitHub",
+          "url": "https://github.com/rdtbra/RDT-02-HUB",
+          "kind": "material"
+        },
+        {
+          "id": "rdt-02-hub-pages",
+          "title": "Abrir no GitHub Pages",
+          "url": "https://rdtbra.github.io/RDT-02-HUB/",
+          "kind": "material"
+        }
+      ]
+    },
+    {
       "id": "rdt-00-hub",
       "category": "projetos",
       "title": "Hub de atividades",
