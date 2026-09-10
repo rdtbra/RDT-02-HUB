@@ -2,33 +2,33 @@ window.HUB_CATALOG = {
   "version": 1,
   "categories": [
     {
-      "id": "estudos",
-      "name": "Estudo de material técnico",
-      "number": "01"
-    },
-    {
       "id": "analise-fontes",
       "name": "Análise de fontes",
-      "number": "02"
+      "number": "01"
     },
     {
       "id": "projetos",
       "name": "Projetos",
+      "number": "02"
+    },
+    {
+      "id": "estudos",
+      "name": "Estudo de material técnico",
       "number": "03"
-    },
-    {
-      "id": "cursos",
-      "name": "Cursos",
-      "number": "04"
-    },
-    {
-      "id": "universidades",
-      "name": "Universidades",
-      "number": "05"
     },
     {
       "id": "desenvolvimentos",
       "name": "Desenvolvimentos",
+      "number": "04"
+    },
+    {
+      "id": "engenharia-reversa",
+      "name": "Engenharia reversa",
+      "number": "05"
+    },
+    {
+      "id": "logica",
+      "name": "Lógica de produtos",
       "number": "06"
     },
     {
@@ -38,31 +38,398 @@ window.HUB_CATALOG = {
     },
     {
       "id": "smart-decision",
-      "name": "Smart Decision",
+      "name": "SDC",
       "number": "08"
-    },
-    {
-      "id": "pessoal",
-      "name": "Pessoal",
-      "number": "09"
-    },
-    {
-      "id": "engenharia-reversa",
-      "name": "Engenharia reversa",
-      "number": "10"
-    },
-    {
-      "id": "logica",
-      "name": "Lógica de produtos",
-      "number": "11"
     },
     {
       "id": "entretenimento",
       "name": "Entretenimento",
+      "number": "09"
+    },
+    {
+      "id": "pessoal",
+      "name": "Pessoal",
+      "number": "10"
+    },
+    {
+      "id": "universidades",
+      "name": "Universidades",
+      "number": "11"
+    },
+    {
+      "id": "cursos",
+      "name": "Cursos",
       "number": "12"
     }
   ],
   "activities": [
+    {
+      "id": "af-01-ib6",
+      "category": "analise-fontes",
+      "title": "InterBase 6",
+      "code": "AF-01-IB6",
+      "resources": [
+        {
+          "id": "af-01-ib6-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-01-IB6",
+          "kind": "material"
+        }
+      ],
+      "description": "Estudo do código-fonte do InterBase 6. Reúna perguntas, referências e descobertas antes de voltar ao ambiente de análise.",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": true,
+      "image": "assets/interbase.png",
+      "environment": {
+        "name": "VM2082-LX64-AF-01-IB6",
+        "host": "RDT-011 · VMware Workstation",
+        "access": "MobaXterm · SSH",
+        "note": "Os atalhos originais foram preservados em referencias/automation/interbase. A ligação entre o hub e o Windows ainda não está instalada."
+      }
+    },
+    {
+      "id": "af-02-lin",
+      "category": "analise-fontes",
+      "title": "Linux Kernel",
+      "code": "AF-02-LIN",
+      "resources": [
+        {
+          "id": "af-02-lin-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-02-LIN",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-02-LIN - Linux Kernel",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "af-03-owa",
+      "category": "analise-fontes",
+      "title": "Open Watcom",
+      "code": "AF-03-OWA",
+      "resources": [
+        {
+          "id": "af-03-owa-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-03-OWA",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-03-OWA - Open Watcom",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "af-04-pgs",
+      "category": "analise-fontes",
+      "title": "PostgreSQL",
+      "code": "AF-04-PGS",
+      "resources": [
+        {
+          "id": "af-04-pgs-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-04-PGS",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-04-PGS - PostgreSQL",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "af-05-opi",
+      "category": "analise-fontes",
+      "title": "OpenIngress",
+      "code": "AF-05-OPI",
+      "resources": [
+        {
+          "id": "af-05-opi-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-05-OPI",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-05-OPI - OpenIngress",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "af-06-har",
+      "category": "analise-fontes",
+      "title": "Harbour",
+      "code": "AF-06-HAR",
+      "resources": [
+        {
+          "id": "af-06-har-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-06-HAR",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-06-HAR - Harbour",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "af-07-gnm",
+      "category": "analise-fontes",
+      "title": "GNumeric",
+      "code": "AF-07-GNM",
+      "resources": [
+        {
+          "id": "af-07-gnm-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-07-GNM",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-07-GNM - GNumeric",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "af-11-fbs",
+      "category": "analise-fontes",
+      "title": "FreeBSD",
+      "code": "AF-11-FBS",
+      "resources": [
+        {
+          "id": "af-11-fbs-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-11-FBS",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-11-FBS - FreeBSD",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "af-12-gcc",
+      "category": "analise-fontes",
+      "title": "GCC",
+      "code": "AF-12-GCC",
+      "resources": [
+        {
+          "id": "af-12-gcc-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-12-GCC",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-12-GCC - GCC",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "af-13-gvi",
+      "category": "analise-fontes",
+      "title": "GVim",
+      "code": "AF-13-GVI",
+      "resources": [
+        {
+          "id": "af-13-gvi-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-13-GVI",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-13-GVI - GVim",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "af-14-7zi",
+      "category": "analise-fontes",
+      "title": "7-Zip",
+      "code": "AF-14-7ZI",
+      "resources": [
+        {
+          "id": "af-14-7zi-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-14-7ZI",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-14-7ZI - 7-Zip",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "af-15-gru",
+      "category": "analise-fontes",
+      "title": "GRUB",
+      "code": "AF-15-GRU",
+      "resources": [
+        {
+          "id": "af-15-gru-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-15-GRU",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-15-GRU - GRUB",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "af-16-bln",
+      "category": "analise-fontes",
+      "title": "Blender",
+      "code": "AF-16-BLN",
+      "resources": [
+        {
+          "id": "af-16-bln-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-16-BLN",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-16-BLN - Blender",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "﻿af-17-r",
+      "category": "analise-fontes",
+      "title": "﻿AF-17-R - R",
+      "code": "﻿AF-17-R",
+      "resources": [
+        {
+          "id": "﻿af-17-r-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-17-R",
+          "kind": "material"
+        }
+      ],
+      "description": "﻿AF-17-R - R",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "af-22-fbd",
+      "category": "analise-fontes",
+      "title": "Firebird",
+      "code": "AF-22-FBD",
+      "resources": [
+        {
+          "id": "af-22-fbd-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-22-FBD",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-22-FBD - Firebird",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "af-23-lbo",
+      "category": "analise-fontes",
+      "title": "LibreOffice",
+      "code": "AF-23-LBO",
+      "resources": [
+        {
+          "id": "af-23-lbo-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-23-LBO",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-23-LBO - LibreOffice",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "af-24-aoo",
+      "category": "analise-fontes",
+      "title": "Apache OpenOffice",
+      "code": "AF-24-AOO",
+      "resources": [
+        {
+          "id": "af-24-aoo-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-24-AOO",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-24-AOO - Apache OpenOffice",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "af-39-fps",
+      "category": "analise-fontes",
+      "title": "Free Pascal",
+      "code": "AF-39-FPS",
+      "resources": [
+        {
+          "id": "af-39-fps-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-39-FPS",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-39-FPS - Free Pascal",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "af-50-owa",
+      "category": "analise-fontes",
+      "title": "Open Watcom 2",
+      "code": "AF-50-OWA",
+      "resources": [
+        {
+          "id": "af-50-owa-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-50-OWA",
+          "kind": "material"
+        }
+      ],
+      "description": "AF-50-OWA - Open Watcom 2",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "﻿af-52-llv",
+      "category": "analise-fontes",
+      "title": "﻿AF-52-LLV - Low Level Virtual Machine (LLVM)",
+      "code": "﻿AF-52-LLV",
+      "resources": [
+        {
+          "id": "﻿af-52-llv-material",
+          "title": "Repositório e fontes",
+          "url": "https://github.com/rdtbra/AF-52-LLV",
+          "kind": "material"
+        }
+      ],
+      "description": "﻿AF-52-LLV - Low Level Virtual Machine (LLVM)",
+      "source": "RDT-00 / AFgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "rdt-00-hub",
+      "category": "projetos",
+      "title": "Hub de atividades",
+      "code": "RDT-00-HUB",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Projetosgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "prj-01-erp",
+      "category": "projetos",
+      "title": "Simulação de ERP",
+      "code": "PRJ-01-ERP",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Projetosgroups.js",
+      "pilot": false
+    },
     {
       "id": "emt-01-es",
       "category": "estudos",
@@ -2040,387 +2407,224 @@ window.HUB_CATALOG = {
       "pilot": false
     },
     {
-      "id": "af-01-ib6",
-      "category": "analise-fontes",
-      "title": "InterBase 6",
-      "code": "AF-01-IB6",
-      "resources": [
-        {
-          "id": "af-01-ib6-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-01-IB6",
-          "kind": "material"
-        }
-      ],
-      "description": "Estudo do código-fonte do InterBase 6. Reúna perguntas, referências e descobertas antes de voltar ao ambiente de análise.",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": true,
-      "image": "assets/interbase.png",
-      "environment": {
-        "name": "VM2082-LX64-AF-01-IB6",
-        "host": "RDT-011 · VMware Workstation",
-        "access": "MobaXterm · SSH",
-        "note": "Os atalhos originais foram preservados em referencias/automation/interbase. A ligação entre o hub e o Windows ainda não está instalada."
-      }
-    },
-    {
-      "id": "af-02-lin",
-      "category": "analise-fontes",
-      "title": "Linux Kernel",
-      "code": "AF-02-LIN",
-      "resources": [
-        {
-          "id": "af-02-lin-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-02-LIN",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-02-LIN - Linux Kernel",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "af-03-owa",
-      "category": "analise-fontes",
-      "title": "Open Watcom",
-      "code": "AF-03-OWA",
-      "resources": [
-        {
-          "id": "af-03-owa-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-03-OWA",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-03-OWA - Open Watcom",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "af-04-pgs",
-      "category": "analise-fontes",
-      "title": "PostgreSQL",
-      "code": "AF-04-PGS",
-      "resources": [
-        {
-          "id": "af-04-pgs-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-04-PGS",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-04-PGS - PostgreSQL",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "af-05-opi",
-      "category": "analise-fontes",
-      "title": "OpenIngress",
-      "code": "AF-05-OPI",
-      "resources": [
-        {
-          "id": "af-05-opi-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-05-OPI",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-05-OPI - OpenIngress",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "af-06-har",
-      "category": "analise-fontes",
-      "title": "Harbour",
-      "code": "AF-06-HAR",
-      "resources": [
-        {
-          "id": "af-06-har-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-06-HAR",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-06-HAR - Harbour",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "af-07-gnm",
-      "category": "analise-fontes",
-      "title": "GNumeric",
-      "code": "AF-07-GNM",
-      "resources": [
-        {
-          "id": "af-07-gnm-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-07-GNM",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-07-GNM - GNumeric",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "af-11-fbs",
-      "category": "analise-fontes",
-      "title": "FreeBSD",
-      "code": "AF-11-FBS",
-      "resources": [
-        {
-          "id": "af-11-fbs-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-11-FBS",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-11-FBS - FreeBSD",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "af-12-gcc",
-      "category": "analise-fontes",
-      "title": "GCC",
-      "code": "AF-12-GCC",
-      "resources": [
-        {
-          "id": "af-12-gcc-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-12-GCC",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-12-GCC - GCC",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "af-13-gvi",
-      "category": "analise-fontes",
-      "title": "GVim",
-      "code": "AF-13-GVI",
-      "resources": [
-        {
-          "id": "af-13-gvi-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-13-GVI",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-13-GVI - GVim",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "af-14-7zi",
-      "category": "analise-fontes",
-      "title": "7-Zip",
-      "code": "AF-14-7ZI",
-      "resources": [
-        {
-          "id": "af-14-7zi-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-14-7ZI",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-14-7ZI - 7-Zip",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "af-15-gru",
-      "category": "analise-fontes",
-      "title": "GRUB",
-      "code": "AF-15-GRU",
-      "resources": [
-        {
-          "id": "af-15-gru-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-15-GRU",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-15-GRU - GRUB",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "af-16-bln",
-      "category": "analise-fontes",
-      "title": "Blender",
-      "code": "AF-16-BLN",
-      "resources": [
-        {
-          "id": "af-16-bln-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-16-BLN",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-16-BLN - Blender",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "﻿af-17-r",
-      "category": "analise-fontes",
-      "title": "﻿AF-17-R - R",
-      "code": "﻿AF-17-R",
-      "resources": [
-        {
-          "id": "﻿af-17-r-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-17-R",
-          "kind": "material"
-        }
-      ],
-      "description": "﻿AF-17-R - R",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "af-22-fbd",
-      "category": "analise-fontes",
-      "title": "Firebird",
-      "code": "AF-22-FBD",
-      "resources": [
-        {
-          "id": "af-22-fbd-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-22-FBD",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-22-FBD - Firebird",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "af-23-lbo",
-      "category": "analise-fontes",
-      "title": "LibreOffice",
-      "code": "AF-23-LBO",
-      "resources": [
-        {
-          "id": "af-23-lbo-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-23-LBO",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-23-LBO - LibreOffice",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "af-24-aoo",
-      "category": "analise-fontes",
-      "title": "Apache OpenOffice",
-      "code": "AF-24-AOO",
-      "resources": [
-        {
-          "id": "af-24-aoo-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-24-AOO",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-24-AOO - Apache OpenOffice",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "af-39-fps",
-      "category": "analise-fontes",
-      "title": "Free Pascal",
-      "code": "AF-39-FPS",
-      "resources": [
-        {
-          "id": "af-39-fps-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-39-FPS",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-39-FPS - Free Pascal",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "af-50-owa",
-      "category": "analise-fontes",
-      "title": "Open Watcom 2",
-      "code": "AF-50-OWA",
-      "resources": [
-        {
-          "id": "af-50-owa-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-50-OWA",
-          "kind": "material"
-        }
-      ],
-      "description": "AF-50-OWA - Open Watcom 2",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "﻿af-52-llv",
-      "category": "analise-fontes",
-      "title": "﻿AF-52-LLV - Low Level Virtual Machine (LLVM)",
-      "code": "﻿AF-52-LLV",
-      "resources": [
-        {
-          "id": "﻿af-52-llv-material",
-          "title": "Repositório e fontes",
-          "url": "https://github.com/rdtbra/AF-52-LLV",
-          "kind": "material"
-        }
-      ],
-      "description": "﻿AF-52-LLV - Low Level Virtual Machine (LLVM)",
-      "source": "RDT-00 / AFgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "rdt-00-hub",
-      "category": "projetos",
-      "title": "Hub de atividades",
-      "code": "RDT-00-HUB",
+      "id": "dv-16-clp",
+      "category": "desenvolvimentos",
+      "title": "Clipper em C",
+      "code": "DV-16-CLP",
       "resources": [],
       "description": "",
-      "source": "RDT-00 / Projetosgroups.js",
+      "source": "RDT-00 / DVgroups.js",
       "pilot": false
     },
     {
-      "id": "prj-01-erp",
-      "category": "projetos",
-      "title": "Simulação de ERP",
-      "code": "PRJ-01-ERP",
+      "id": "bey-01-joy",
+      "category": "beyond",
+      "title": "Alterações no Hora Hora",
+      "code": "BEY-01-JOY",
       "resources": [],
       "description": "",
-      "source": "RDT-00 / Projetosgroups.js",
+      "source": "RDT-00 / Beyond.js",
       "pilot": false
     },
     {
-      "id": "cur-01-pc",
-      "category": "cursos",
-      "title": "PLACEHOLDER",
-      "code": "CUR-01-PC",
+      "id": "sdc-01-ppn",
+      "category": "smart-decision",
+      "title": "Funcef - Conversão de código para SAS Viya",
+      "code": "SDC-01-PPN",
       "resources": [
         {
-          "id": "cur-01-pc-material",
+          "id": "sdc-01-ppn-material",
           "title": "Material de referência",
-          "url": "https://drive.google.com/open?id=1q54w5ZOAwk6af8_414Psuz8Cre81wR2m&usp=drive_fs",
+          "url": "https://sas.funcef.com.br/SASStudio/",
           "kind": "material"
         }
       ],
       "description": "",
-      "source": "RDT-00 / CURgroups.js",
+      "source": "RDT-00 / SDCgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "llm-conversacionallic",
+      "category": "pessoal",
+      "title": "LLMs conversacionais pagas",
+      "code": "LLM-CONVERSACIONALLIC",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "llm-conversacional",
+      "category": "pessoal",
+      "title": "LLMs conversacionais",
+      "code": "LLM-CONVERSACIONAL",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "llm-som-imagem-video",
+      "category": "pessoal",
+      "title": "LLMs Som Imagem e Vídeos",
+      "code": "LLM-SOM-IMAGEM-VIDEO",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "produtividade",
+      "category": "pessoal",
+      "title": "Produtividade",
+      "code": "PRODUTIVIDADE",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "produtos-avaliar",
+      "category": "pessoal",
+      "title": "Produtos a Avaliar",
+      "code": "PRODUTOS-AVALIAR",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "chatgpt-saude-financas",
+      "category": "pessoal",
+      "title": "ChatGPT Saúde, Finanças",
+      "code": "CHATGPT-SAUDE-FINANCAS",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "MCE-IA",
+      "category": "pessoal",
+      "title": "MCE-IA",
+      "code": "MCE-IA",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "youtube",
+      "category": "pessoal",
+      "title": "YouTube",
+      "code": "YOUTUBE",
+      "resources": [
+        {
+          "id": "youtube-material",
+          "title": "Material de referência",
+          "url": "https://www.yotube.com",
+          "kind": "material"
+        }
+      ],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "github",
+      "category": "pessoal",
+      "title": "GitHub",
+      "code": "GITHUB",
+      "resources": [
+        {
+          "id": "github-material",
+          "title": "Material de referência",
+          "url": "https://github.com/rdtbra?tab=repositories",
+          "kind": "material"
+        }
+      ],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "leitura",
+      "category": "pessoal",
+      "title": "Leitura Técnica",
+      "code": "LEITURA",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "leituraNãoTecnica",
+      "category": "pessoal",
+      "title": "Leitura não Técnica",
+      "code": "LEITURANÃOTECNICA",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "cursos",
+      "category": "pessoal",
+      "title": "Plataformas de Cursos",
+      "code": "CURSOS",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "universidades",
+      "category": "pessoal",
+      "title": "Universidades",
+      "code": "UNIVERSIDADES",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "redes-sociais",
+      "category": "pessoal",
+      "title": "Redes Sociais",
+      "code": "REDES-SOCIAIS",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "xadrez",
+      "category": "pessoal",
+      "title": "Xadrez",
+      "code": "XADREZ",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "AINews",
+      "category": "pessoal",
+      "title": "Notícias de IA - acompanhar",
+      "code": "AINEWS",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
+      "pilot": false
+    },
+    {
+      "id": "News",
+      "category": "pessoal",
+      "title": "Notícias",
+      "code": "NEWS",
+      "resources": [],
+      "description": "",
+      "source": "RDT-00 / Pessoalgroups.js",
       "pilot": false
     },
     {
@@ -2744,224 +2948,20 @@ window.HUB_CATALOG = {
       "pilot": false
     },
     {
-      "id": "dv-16-clp",
-      "category": "desenvolvimentos",
-      "title": "Clipper em C",
-      "code": "DV-16-CLP",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / DVgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "bey-01-joy",
-      "category": "beyond",
-      "title": "Alterações no Hora Hora",
-      "code": "BEY-01-JOY",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / Beyond.js",
-      "pilot": false
-    },
-    {
-      "id": "sdc-01-ppn",
-      "category": "smart-decision",
-      "title": "Funcef - Conversão de código para SAS Viya",
-      "code": "SDC-01-PPN",
+      "id": "cur-01-pc",
+      "category": "cursos",
+      "title": "PLACEHOLDER",
+      "code": "CUR-01-PC",
       "resources": [
         {
-          "id": "sdc-01-ppn-material",
+          "id": "cur-01-pc-material",
           "title": "Material de referência",
-          "url": "https://sas.funcef.com.br/SASStudio/",
+          "url": "https://drive.google.com/open?id=1q54w5ZOAwk6af8_414Psuz8Cre81wR2m&usp=drive_fs",
           "kind": "material"
         }
       ],
       "description": "",
-      "source": "RDT-00 / SDCgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "llm-conversacionallic",
-      "category": "pessoal",
-      "title": "LLMs conversacionais pagas",
-      "code": "LLM-CONVERSACIONALLIC",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "llm-conversacional",
-      "category": "pessoal",
-      "title": "LLMs conversacionais",
-      "code": "LLM-CONVERSACIONAL",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "llm-som-imagem-video",
-      "category": "pessoal",
-      "title": "LLMs Som Imagem e Vídeos",
-      "code": "LLM-SOM-IMAGEM-VIDEO",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "produtividade",
-      "category": "pessoal",
-      "title": "Produtividade",
-      "code": "PRODUTIVIDADE",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "produtos-avaliar",
-      "category": "pessoal",
-      "title": "Produtos a Avaliar",
-      "code": "PRODUTOS-AVALIAR",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "chatgpt-saude-financas",
-      "category": "pessoal",
-      "title": "ChatGPT Saúde, Finanças",
-      "code": "CHATGPT-SAUDE-FINANCAS",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "MCE-IA",
-      "category": "pessoal",
-      "title": "MCE-IA",
-      "code": "MCE-IA",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "youtube",
-      "category": "pessoal",
-      "title": "YouTube",
-      "code": "YOUTUBE",
-      "resources": [
-        {
-          "id": "youtube-material",
-          "title": "Material de referência",
-          "url": "https://www.yotube.com",
-          "kind": "material"
-        }
-      ],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "github",
-      "category": "pessoal",
-      "title": "GitHub",
-      "code": "GITHUB",
-      "resources": [
-        {
-          "id": "github-material",
-          "title": "Material de referência",
-          "url": "https://github.com/rdtbra?tab=repositories",
-          "kind": "material"
-        }
-      ],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "leitura",
-      "category": "pessoal",
-      "title": "Leitura Técnica",
-      "code": "LEITURA",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "leituraNãoTecnica",
-      "category": "pessoal",
-      "title": "Leitura não Técnica",
-      "code": "LEITURANÃOTECNICA",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "cursos",
-      "category": "pessoal",
-      "title": "Plataformas de Cursos",
-      "code": "CURSOS",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "universidades",
-      "category": "pessoal",
-      "title": "Universidades",
-      "code": "UNIVERSIDADES",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "redes-sociais",
-      "category": "pessoal",
-      "title": "Redes Sociais",
-      "code": "REDES-SOCIAIS",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "xadrez",
-      "category": "pessoal",
-      "title": "Xadrez",
-      "code": "XADREZ",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "AINews",
-      "category": "pessoal",
-      "title": "Notícias de IA - acompanhar",
-      "code": "AINEWS",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
-      "pilot": false
-    },
-    {
-      "id": "News",
-      "category": "pessoal",
-      "title": "Notícias",
-      "code": "NEWS",
-      "resources": [],
-      "description": "",
-      "source": "RDT-00 / Pessoalgroups.js",
+      "source": "RDT-00 / CURgroups.js",
       "pilot": false
     },
     {

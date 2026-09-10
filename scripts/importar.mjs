@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
 const root=path.resolve(import.meta.dirname,'..');
-const definitions=[['estudos','Estudo de material técnico','Estudosgroups.js','01'],['analise-fontes','Análise de fontes','AFgroups.js','02'],['projetos','Projetos','Projetosgroups.js','03'],['cursos','Cursos','CURgroups.js','04'],['universidades','Universidades','UNIgroups.js','05'],['desenvolvimentos','Desenvolvimentos','DVgroups.js','06'],['beyond','Beyond','Beyond.js','07'],['smart-decision','Smart Decision','SDCgroups.js','08'],['pessoal','Pessoal','Pessoalgroups.js','09'],['engenharia-reversa','Engenharia reversa',null,'10'],['logica','Lógica de produtos',null,'11'],['entretenimento','Entretenimento',null,'12']];
+const definitions=[['analise-fontes','Análise de fontes','AFgroups.js','01'],['projetos','Projetos','Projetosgroups.js','02'],['estudos','Estudo de material técnico','Estudosgroups.js','03'],['desenvolvimentos','Desenvolvimentos','DVgroups.js','04'],['engenharia-reversa','Engenharia reversa',null,'05'],['logica','Lógica de produtos',null,'06'],['beyond','Beyond','Beyond.js','07'],['smart-decision','SDC','SDCgroups.js','08'],['entretenimento','Entretenimento',null,'09'],['pessoal','Pessoal','Pessoalgroups.js','10'],['universidades','Universidades','UNIgroups.js','11'],['cursos','Cursos','CURgroups.js','12']];
 const categories=definitions.map(([id,name,,number])=>({id,name,number}));
 const activities=[];
 for(const [category,,file] of definitions){
