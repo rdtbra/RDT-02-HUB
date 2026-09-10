@@ -2963,6 +2963,42 @@ window.HUB_CATALOG = {
       "description": "",
       "source": "RDT-00 / Pessoalgroups.js",
       "pilot": false
+    },
+    {
+      "id": "dito-e-feito",
+      "category": "entretenimento",
+      "title": "Dito e Feito",
+      "code": "DITO-E-FEITO",
+      "description": "Leitura no Kindle. Registre onde parou e o que quer continuar.",
+      "image": "assets/dito-e-feito.png",
+      "source": "Automation / Atividades / Entretenimento",
+      "pilot": false,
+      "resources": [
+        {
+          "id": "dito-e-feito-acesso",
+          "title": "Ler no Kindle",
+          "url": "https://read.amazon.in/?asin=B0F9YDS4JP",
+          "kind": "material"
+        }
+      ]
+    },
+    {
+      "id": "ultraman-2-1",
+      "category": "entretenimento",
+      "title": "Ultraman 2-1",
+      "code": "ULTRAMAN-2-1",
+      "description": "Acesso ao episódio salvo no seu atalho. Registre onde parou para retomar depois.",
+      "image": "assets/ultraman-2-1.png",
+      "source": "Automation / Atividades / Entretenimento",
+      "pilot": false,
+      "resources": [
+        {
+          "id": "ultraman-2-1-acesso",
+          "title": "Assistir na Netflix",
+          "url": "https://www.netflix.com/watch/81148907",
+          "kind": "material"
+        }
+      ]
     }
   ]
 };

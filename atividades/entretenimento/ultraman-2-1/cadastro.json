@@ -1,0 +1,18 @@
+{
+  "id": "ultraman-2-1",
+  "category": "entretenimento",
+  "title": "Ultraman 2-1",
+  "code": "ULTRAMAN-2-1",
+  "description": "Acesso ao episódio salvo no seu atalho. Registre onde parou para retomar depois.",
+  "image": "assets/ultraman-2-1.png",
+  "source": "Automation / Atividades / Entretenimento",
+  "pilot": false,
+  "resources": [
+    {
+      "id": "ultraman-2-1-acesso",
+      "title": "Assistir na Netflix",
+      "url": "https://www.netflix.com/watch/81148907",
+      "kind": "material"
+    }
+  ]
+}

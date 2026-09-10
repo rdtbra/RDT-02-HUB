@@ -1,0 +1,18 @@
+{
+  "id": "dito-e-feito",
+  "category": "entretenimento",
+  "title": "Dito e Feito",
+  "code": "DITO-E-FEITO",
+  "description": "Leitura no Kindle. Registre onde parou e o que quer continuar.",
+  "image": "assets/dito-e-feito.png",
+  "source": "Automation / Atividades / Entretenimento",
+  "pilot": false,
+  "resources": [
+    {
+      "id": "dito-e-feito-acesso",
+      "title": "Ler no Kindle",
+      "url": "https://read.amazon.in/?asin=B0F9YDS4JP",
+      "kind": "material"
+    }
+  ]
+}
