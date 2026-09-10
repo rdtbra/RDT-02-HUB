@@ -32,3 +32,15 @@ node('pinHome').onclick();assert(JSON.parse(persisted).pinned.includes('af-01-ib
 sandbox.location.hash='#inicio';vm.runInNewContext(read('dist/assets/app.js'),sandbox);
 assert(node('main').innerHTML.includes('FIXADA'));node('homeLimit').onchange({target:{value:'8'}});assert.equal(JSON.parse(persisted).homeLimit,8);
 console.log('OK: fixação, recentes sem duplicação, limites, backup antigo e controles da interface.');
+
+assert.equal(c.move(['a','b','c'],'c','a').join(','),'c,a,b');
+assert.equal(c.move(['a','b','c'],'a','c').join(','),'b,c,a');
+assert.equal(c.ordered([{id:'a'},{id:'b'},{id:'c'}],['b','missing']).map(a=>a.id).join(','),'b,a,c');
+const orderBackup=c.empty();orderBackup.orders.entretenimento=['ultraman-2-1','reacher-1-6'];
+assert.equal(c.validate(JSON.parse(JSON.stringify(orderBackup))).orders.entretenimento[0],'ultraman-2-1');
+assert.throws(()=>c.validate({...orderBackup,orders:{inicio:'invalid'}}));
+node('orderList').querySelectorAll=()=>[];
+sandbox.location.hash='#categoria/entretenimento';vm.runInNewContext(read('dist/assets/app.js'),sandbox);
+node('organizeCategory').onclick();assert(node('main').innerHTML.includes('Organizar Entretenimento'));assert(node('orderList').innerHTML.includes('Ultraman'));
+node('finishOrder').onclick();assert(node('main').innerHTML.includes('organizeCategory'));
+console.log('OK: reordenação nos dois sentidos, novos itens, backup de ordem e entrada/saída do modo Organizar.');
