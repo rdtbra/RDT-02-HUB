@@ -2983,6 +2983,24 @@ window.HUB_CATALOG = {
       ]
     },
     {
+      "id": "reacher-1-6",
+      "category": "entretenimento",
+      "title": "Reacher 1-6",
+      "code": "REACHER-1-6",
+      "description": "Retomar Reacher: temporada 1, episódio 6. O link abre a página da série fornecida por você no Prime Video.",
+      "image": "assets/reacher-1-6.png",
+      "source": "Automation / Atividades / Entretenimento",
+      "pilot": false,
+      "resources": [
+        {
+          "id": "reacher-1-6-acesso",
+          "title": "Abrir no Prime Video",
+          "url": "https://www.primevideo.com/region/na/detail/0RTZ57DQ6PBHH29UN5JS7U7CW4?jic=8%7CEgNhbGw%3D&ref_=atv_hm_hom_c_4qpoT6_2_1",
+          "kind": "material"
+        }
+      ]
+    },
+    {
       "id": "ultraman-2-1",
       "category": "entretenimento",
       "title": "Ultraman 2-1",
